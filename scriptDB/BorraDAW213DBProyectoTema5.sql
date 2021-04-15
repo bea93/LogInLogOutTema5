@@ -1,5 +1,6 @@
--- Borrar base de datos con drop--
-DROP DATABASE DAW213DBProyectoTema5;
+/* Base de datos a usar */
+    USE dbs272025;
 
--- Borrar usuario asociado a esa base de datos
-DROP USER usuarioDAW213DBProyectoTema5;
+/* Borrado de las tablas */
+DROP TABLE T02_Departamento;
+DROP TABLE T01_Usuario;

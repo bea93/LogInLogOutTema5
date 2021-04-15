@@ -1,10 +1,5 @@
-CREATE DATABASE IF NOT EXISTS DAW213DBProyectoTema5;
-
-USE DAW213DBProyectoTema5;
-
-CREATE USER 'usuarioDAW213DBProyectoTema5'@'%' IDENTIFIED BY 'paso';
-
-GRANT ALL PRIVILEGES ON `DAW213DBProyectoTema5`.* TO 'usuarioDAW213DBProyectoTema5'@'%';
+/* Base de datos a usar */
+    USE dbs272025;
 
 CREATE TABLE T02_Departamento (
     T02_CodDepartamento VARCHAR(3) PRIMARY KEY,

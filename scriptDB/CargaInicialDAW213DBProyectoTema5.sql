@@ -1,4 +1,5 @@
-USE DAW213DBProyectoTema5;
+/* Base de datos a usar */
+    USE dbs272025;
 
 -- Introduccion de datos dentro de la tabla creada
 INSERT INTO T02_Departamento(T02_CodDepartamento, T02_DescDepartamento, T02_FechaCreacionDepartamento, T02_VolumenNegocio) VALUES
