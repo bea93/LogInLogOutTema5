@@ -9,7 +9,7 @@
 session_start();
 
 //Fichero de configuración de la BBDD
-require_once '../../config/confDB.php';
+require_once '../config/confDB.php';
 //Importamos la libreria de validacion
 require_once '../core/210322ValidacionFormularios.php';
 
@@ -152,17 +152,17 @@ if ($entradaOK) {
         <body>
             <div id="fh5co-page">
                 <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-                    <h1 id="fh5co-logo"><a href="../../index.html"><img src="../webroot/images/logo.png"
+                    <h1 id="fh5co-logo"><a href="../../proyectoDWES/indexProyectoDWES.html"><img src="../webroot/images/logo.png"
                                                                         alt="Free HTML5 Bootstrap Website Template"></a></h1>
                     <nav id="fh5co-main-menu" role="navigation">
                         <ul>
-                            <li class="fh5co-active"><a href="../../index.html">Home</a></li>
-                            <li><a href="https://github.com/bea93" target="_blank">GitHub</a></li>
-                            <li><a href="../../juegos.html">Juegos</a></li>
+                            <li class="fh5co-active" style="color: #1512da">Log in Log out Tema 5</li>
+                            <li><a href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></li>
                         </ul>
                     </nav>
                     <div class="fh5co-footer">
-                        <p>&copy; 2021 Beatriz Merino Macía.</p>
+                        <p style="font-size: 1.5em"><a style="text-decoration: none; color: black" href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></p>
+                        <p><a href="../../index.html" style=" text-decoration: none; color: black">&copy; 2021 Beatriz Merino Macía.</a></p>
                     </div>
                 </aside>
                 <div id="fh5co-main">

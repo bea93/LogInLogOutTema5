@@ -8,7 +8,7 @@
 //Importamos la libreria de validacion
 require_once '../core/210322ValidacionFormularios.php';
 //Fichero de configuración de la BBDD
-require_once '../../config/confDB.php';
+require_once '../config/confDB.php';
 
 $entradaOK = true;
 
@@ -156,22 +156,22 @@ if ($entradaOK) {
         <body>
             <div id="fh5co-page">
                 <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-                    <h1 id="fh5co-logo"><a href="../../index.html"><img src="../webroot/images/logo.png"
+                    <h1 id="fh5co-logo"><a href="../../proyectoDWES/indexProyectoDWES.html"><img src="../webroot/images/logo.png"
                                                                         alt="Free HTML5 Bootstrap Website Template"></a></h1>
                     <nav id="fh5co-main-menu" role="navigation">
                         <ul>
-                            <li class="fh5co-active"><a href="../../index.html">Home</a></li>
-                            <li><a href="https://github.com/bea93" target="_blank">GitHub</a></li>
+                            <li class="fh5co-active" style="color: #1512da">Log in Log out Tema 5</li>
                             <li><a href="../../juegos.html">Juegos</a></li>
                         </ul>
                     </nav>
                     <div class="fh5co-footer">
-                        <p>&copy; 2021 Beatriz Merino Macía.</p>
+                        <p style="font-size: 1.5em"><a style="text-decoration: none; color: black" href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></p>
+                        <p><a href="../../index.html" style=" text-decoration: none; color: black">&copy; 2021 Beatriz Merino Macía.</a></p>
                     </div>
                 </aside>
                 <div id="fh5co-main">
                     <div class="fh5co-narrow-content">
-                        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">LogIn</h2>
+                        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Login Logout Tema 5</h2>
 
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                             <fieldset>
@@ -179,15 +179,15 @@ if ($entradaOK) {
                                     <strong>Nombre: </strong>
                                     <input type="text" name="codUsuario" style="border: 1px solid black" 
                                            value="<?php
-    if ($aErrores['codUsuario'] == NULL && isset($_POST['codUsuario'])) {
-        echo $_POST['codUsuario'];
-    }
-    ?>">
+                                                    if ($aErrores['codUsuario'] == NULL && isset($_POST['codUsuario'])) {
+                                                        echo $_POST['codUsuario'];
+                                                    }
+                                                    ?>">
                                         <?php if ($aErrores['codUsuario'] != NULL) { ?>
-                                        <div class="error">
-                                        <?php echo $aErrores['codUsuario']; ?>
-                                        </div>   
-    <?php } ?>                
+                                            <div class="error">
+                                            <?php echo $aErrores['codUsuario']; ?>
+                                            </div>   
+                                        <?php } ?>                
                                 </div>
                                 <br>
                                 <div class="obligatorio">
@@ -198,11 +198,11 @@ if ($entradaOK) {
                                                echo $_POST['password'];
                                            }
                                            ?>">
-                                    <?php if ($aErrores['password'] != NULL) { ?>
-                                        <div class="error">
-        <?php echo $aErrores['password']; ?>
-                                        </div>   
-    <?php } ?>                
+                                            <?php if ($aErrores['password'] != NULL) { ?>
+                                                <div class="error">
+                                                    <?php echo $aErrores['password']; ?>
+                                                </div>   
+                                            <?php } ?>                
                                 </div>
                                 <br>
                                 <div>                

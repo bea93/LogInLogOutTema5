@@ -9,7 +9,7 @@
 session_start();
 
 //Fichero de configuración de la BBDD
-require_once '../../config/confDB.php';
+require_once '../config/confDB.php';
 
 //Si no hay una sesión iniciada te manda al Login
 if (!isset($_SESSION['usuarioDAW213DBAppLoginLogout'])) {
@@ -129,17 +129,19 @@ try {
     <body>
         <div id="fh5co-page">
             <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-                <h1 id="fh5co-logo"><a href="../../index.html"><img src="../webroot/images/logo.png"
+                <h1 id="fh5co-logo"><a href=""><img src="../webroot/images/logo.png"
                                                                     alt="Free HTML5 Bootstrap Website Template"></a></h1>
                 <nav id="fh5co-main-menu" role="navigation">
                     <ul>
-                        <li class="fh5co-active"><a href="../../index.html">Home</a></li>
-                        <li><a href="https://github.com/bea93" target="_blank">GitHub</a></li>
-                        <li><a href="../../juegos.html">Juegos</a></li>
+                        <li class="fh5co-active" style="color: #1512da">Log in Log out Tema 5</li>
+                        <li><a href="login.php">Cerrar Sesión</a></li>
+                        <li><a href="editarPerfil.php">Editar</a></li>
+                        <li><a href="detalle.php">Detalle</a></li>
                     </ul>
                 </nav>
                 <div class="fh5co-footer">
-                    <p>&copy; 2021 Beatriz Merino Macía.</p>
+                    <p style="font-size: 1.5em"><a style="text-decoration: none; color: black" href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></p>
+                    <p><a href="../../index.html" style=" text-decoration: none; color: black">&copy; 2021 Beatriz Merino Macía.</a></p>
                 </div>
             </aside>
             <div id="fh5co-main">
@@ -159,15 +161,6 @@ try {
                         <h3>Su última conexión fue el día <?php echo date('d/m/Y', $_SESSION['ultimaConexionAnterior']); ?> a las <?php echo date('H:i:s', $_SESSION['ultimaConexionAnterior']); ?></h3>
 <?php } ?>
                     <br>
-
-                    <form action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post">
-                        <div class="obligatorio">
-                            <input type="submit" name="cerrar" value="Cerrar Sesión">
-                            <input type="submit" name="detalle" value="Detalle">
-                            <input type="submit" name="editar" value="Editar Perfil">
-                        </div>
-                    </form>
-
                 </div> 
             </div> 
             <!-- jQuery -->

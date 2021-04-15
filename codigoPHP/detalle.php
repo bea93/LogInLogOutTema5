@@ -86,17 +86,17 @@ if (!isset($_SESSION['usuarioDAW213DBAppLoginLogout'])) {
     <body>
         <div id="fh5co-page">
             <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-                <h1 id="fh5co-logo"><a href="../../index.html"><img src="../webroot/images/logo.png"
+                <h1 id="fh5co-logo"><a href="../../proyectoDWES/indexProyectoDWES.html"><img src="../webroot/images/logo.png"
                                                                     alt="Free HTML5 Bootstrap Website Template"></a></h1>
                 <nav id="fh5co-main-menu" role="navigation">
                     <ul>
-                        <li class="fh5co-active"><a href="../../index.html">Home</a></li>
-                        <li><a href="https://github.com/bea93" target="_blank">GitHub</a></li>
-                        <li><a href="../../juegos.html">Juegos</a></li>
+                        <li class="fh5co-active" style="color: #1512da">Log in Log out Tema 5</li>
+                        <li><a href="programa.php">Volver</a></li>
                     </ul>
                 </nav>
                 <div class="fh5co-footer">
-                    <p>&copy; 2021 Beatriz Merino Macía.</p>
+                    <p style="font-size: 1.5em"><a style="text-decoration: none; color: black" href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></p>
+                    <p><a href="../../index.html" style=" text-decoration: none; color: black">&copy; 2021 Beatriz Merino Macía.</a></p>
                 </div>
             </aside>
             <div id="fh5co-main">
@@ -104,20 +104,19 @@ if (!isset($_SESSION['usuarioDAW213DBAppLoginLogout'])) {
                     <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Detalle</h2>
 
                     <?php
+                    echo '<h3>Variable Session</h3>';
+                    echo '<pre>';
+                    print_r($_SESSION);
+                    echo '</pre>';
+                    echo '<h3>Variable Cookies</h3>';
+                    echo '<pre>';
+                    print_r($_COOKIE);
+                    echo '</pre>';
                     echo '<h3>Variable Server</h3>';
                     echo '<pre>';
                     print_r($_SERVER);
                     echo '</pre>';
-                    echo '<h3>Variable Server</h3>';
-                    echo "<pre style='text-align:left;'>";
-                    print_r($_SERVER) . '<br>';
-                    echo "</pre>";
-                    echo '<h3>Variable Cookies</h3>';
-                    print_r($_COOKIE);
-                    ?>
-                    <div>
-                        <a href="programa.php"><input type="submit" name="volver" value="Volver"></a>
-                    </div>    
+                    ?>  
                 </div> 
             </div> 
             <!-- jQuery -->

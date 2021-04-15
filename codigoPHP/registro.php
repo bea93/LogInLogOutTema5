@@ -8,7 +8,7 @@
 //Importamos la libreria de validacion
 require_once '../core/210322ValidacionFormularios.php';
 //Fichero de configuración de la BBDD
-require_once '../../config/confDB.php';
+require_once '../config/confDB.php';
 
 //Inicializamos una variable que nos ayudara a controlar si todo esta correcto
 $entradaOK = true;
@@ -164,22 +164,21 @@ if ($entradaOK) {
         <body>
             <div id="fh5co-page">
                 <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-                    <h1 id="fh5co-logo"><a href="../../index.html"><img src="../webroot/images/logo.png"
+                    <h1 id="fh5co-logo"><a href="../../proyectoDWES/indexProyectoDWES.html"><img src="../webroot/images/logo.png"
                                                                         alt="Free HTML5 Bootstrap Website Template"></a></h1>
                     <nav id="fh5co-main-menu" role="navigation">
                         <ul>
-                            <li class="fh5co-active"><a href="../../index.html">Home</a></li>
-                            <li><a href="https://github.com/bea93" target="_blank">GitHub</a></li>
-                            <li><a href="../../juegos.html">Juegos</a></li>
+                            <li class="fh5co-active" style="color: #1512da">Log in Log out Tema 5</li>
                         </ul>
                     </nav>
                     <div class="fh5co-footer">
-                        <p>&copy; 2021 Beatriz Merino Macía.</p>
+                        <p style="font-size: 1.5em"><a style="text-decoration: none; color: black" href="https://github.com/bea93/LogInLogOutTema5/tree/Developer" target="_blank">GitHub</a></p>
+                        <p><a href="../../index.html" style=" text-decoration: none; color: black">&copy; 2021 Beatriz Merino Macía.</a></p>
                     </div>
                 </aside>
                 <div id="fh5co-main">
                     <div class="fh5co-narrow-content">
-                        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft"></h2>
+                        <h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Registro</h2>
 
                         <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                             <fieldset>
